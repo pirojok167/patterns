@@ -1,14 +1,14 @@
 package Factory.SimpleFactory;
 
 public class PizzaStore {
-    PizzaFactory pizzaFactory;
+    SimplePizzaFactory pizzaFactory;
 
-    public PizzaStore(PizzaFactory pizzaFactory) {
+    public PizzaStore(SimplePizzaFactory pizzaFactory) {
         this.pizzaFactory = pizzaFactory;
     }
 
     public static void main(String[] args) {
-        PizzaFactory pizzaFactory = new PizzaFactory();
+        SimplePizzaFactory pizzaFactory = new SimplePizzaFactory();
 
         PizzaStore pizzaStore = new PizzaStore(pizzaFactory);
 

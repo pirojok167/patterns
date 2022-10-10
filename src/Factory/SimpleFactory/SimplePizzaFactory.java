@@ -1,6 +1,6 @@
 package Factory.SimpleFactory;
 
-public class PizzaFactory {
+public class SimplePizzaFactory {
     public Pizza createPizza(String pizzaType) {
         if (pizzaType.equals("Greek")) {
             return new CheesePizza();
