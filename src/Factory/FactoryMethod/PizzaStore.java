@@ -2,10 +2,16 @@ package Factory.FactoryMethod;
 
 public abstract class PizzaStore {
     public static void main(String[] args) {
-        PizzaStore pizzaStore = new ChinesePizzaStore();
-        Pizza pizza = pizzaStore.makePizza("cheese");
+        PizzaStore chinesePizzaStore = new ChinesePizzaStore();
+        Pizza chinesePizza = chinesePizzaStore.makePizza("cheese");
 
-        System.out.println(pizza);
+        System.out.println(chinesePizza);
+        System.out.println();
+
+        PizzaStore russianPizzaStore = new RussianPizzaStore();
+        Pizza russianPizza = russianPizzaStore.makePizza("cheese");
+
+        System.out.println(russianPizza);
     }
 
     public Pizza makePizza(String pizzaType) {
